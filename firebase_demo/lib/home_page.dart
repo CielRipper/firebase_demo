@@ -55,12 +55,12 @@ class HomePage extends StatelessWidget {
                   GuestBook(
                     addMessage: (message) =>
                         appState.addMessageToGuestBook(message),
+                    messages: appState.guestBookMessages, // new
                   ),
                 ],
               ],
             ),
-          ),
-          // ...to here.
+          ),// ...to here.
         ],
       ),
     );
